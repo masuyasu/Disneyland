@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow-x: hidden;
+}
+
+
+/*ここからheaderです*/
+
+header {
+    width: 100%;
+    background-color : pink;
+}
+
+.sp-nav{
+    display: none;
+    width: 100%;
+    height: 100%; 
+}
+
+.main-img {
+    width: 1000px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+#container{
+    height: 500px;
+}
+
+#container a{
+    display: block;
+    height: 500px;
+}
+
+h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: navy;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Anonymous Pro', monospace;
+    text-shadow: 3px 3px 2px #696969;
+}
+
+.name {
+    text-align: center;
+}
+
+li {
+    float: left;
+    width: 33.33333%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    list-style: none;
+    text-align: center;
+}
+
+li:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.icon-rank9-7 {
+    background-color: #ffa07a;
+}
+
+.icon-rank6-4 {
+    background-color: #f08080;
+}
+
+.icon-rank3-1 {
+    background-color: #fa8072;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #00ff00;
+    cursor: pointer;
+}
+
+/*header終わり*/
+
+/*ここからbody*/
+h2{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: navy;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Anonymous Pro', monospace;
+    text-shadow: 3px 3px 2px #696969;
+}
+
+h3{
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    color: navy;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Anonymous Pro', monospace;
+    text-shadow: 3px 3px 2px #696969;
+
+}
+
+.main_rank{
+    width: 920px;
+    margin: 0 auto 100px auto;
+}
+
+.imgdyz {
+    display: inline-block;
+    width: 280px;
+    height: 280px;
+    text-align: center;
+}
+
+.text {
+    float: left;
+    width: 280px;
+    margin-right: 40px;
+}
+
+.text1{
+    float: left;
+    width: 280px;
+    margin-right: 0: 
+}
+
+.map-box{
+    display: inline;
+    margin: 0 auto;
+}
+
+.map{
+    cursor: pointer;
+}
+
+.sign{
+    float: left;
+    margin: 30px 0;
+    color: #EB1E5D;
+}
+
+
+
+/*ここでbody終わり*/
+
+/*ここからfooterです。*/
+
+.copylight{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
+
+/*footer終わり。*/
+
+/*ここからスマホ用の記述*/
+
+
+@media all and (max-width: 640px){
+
+    .main_rank{
+        width: 640px;
+    }
+
+    .text{
+        float: none;
+        width: 640px;
+        text-align: center;
+    }
+
+    .text1{
+        float: none;
+        width: 640px;
+        text-align: center;
+    }
+
+    .text .clearfix{
+        content: "";
+        display: block;
+        clear: both;
+
+    }
+
+    .pc-nav{
+        display: none;
+    }
+
+
+    .sp-menu-icon{
+        display: block;
+        position: relative;
+        float: right;
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+    }
+
+    .icon-top,
+    .icon-center,
+    .icon-bottom{
+        width: 25px;
+        height: 3px;
+        margin: 10px;
+        background-color: white;
+    }
+
+    .icon-top{
+        position: absolute;
+        top: 4px;
+        right: 2px;
+    }
+
+    .icon-center{
+        position: absolute;
+        top: 14px;
+        right: 2px;
+    }
+
+    .icon-bottom{
+        position: absolute;
+        top: 24px;
+        right: 2px;
+    }
+
+    .sp-menu{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+    }
+
+    ul{
+        border-top: 3px solid black;
+        border-bottom:  3px solid black;
+    }
+
+    li{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-bottom: 3px solid black;
+    }
+
+    .icon-rank9-7{
+        background-color: pink;
+    }
+
+    .icon-rank6-4{
+        background-color: pink;
+    }
+
+    .icon-rank3-1{
+        background-color: pink;
+    }
+    
+
+
+}
+
+/*スマホ用記述終わり*/
